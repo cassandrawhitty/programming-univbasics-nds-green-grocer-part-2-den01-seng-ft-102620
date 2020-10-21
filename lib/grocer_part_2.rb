@@ -45,7 +45,8 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
- 
+ # iterate through the cart
+  
 end
 
 =begin
