@@ -41,9 +41,9 @@ def apply_clearance(cart)
  cart.each do |grocery_item|
    if grocery_item[:clearance] == true 
      grocery_item[:price] = grocery_item[:price] * 0.8
+     binding.pry
    end
    return cart
-   binding.pry
  end
  #if clearance == true
    #reduce the price by 20%
