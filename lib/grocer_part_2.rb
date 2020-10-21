@@ -37,9 +37,7 @@ def apply_coupons(cart, coupons)
 end 
 
 def apply_clearance(cart)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This method **should** update cart
+ 
 end
 
 def checkout(cart, coupons)
@@ -120,4 +118,9 @@ PART OF SECOND ATTEMPT:
         #   coupon_item[:count] = grocery_item[:count]
         #   cart.push(coupon_item)
         # end
+        
+APPLY CLEARANCE NOTES:
+# Consult README for inputs and outputs
+#
+# REMEMBER: This method **should** update cart
 =end
