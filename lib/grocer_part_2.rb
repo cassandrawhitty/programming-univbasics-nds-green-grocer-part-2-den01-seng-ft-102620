@@ -47,6 +47,8 @@ end
 def checkout(cart, coupons)
  # iterate through the cart
  cart = consolidate_cart(cart)
+ cart = apply_coupons(cart, coupons)
+ cart = apply_clearance(cart)
 end
 
 =begin
