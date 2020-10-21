@@ -42,7 +42,6 @@ def apply_clearance(cart)
    if grocery_item[:clearance] == true 
      grocery_item[:price] = grocery_item[:price] * 0.8
    end
-   return cart
  end
 end
 
