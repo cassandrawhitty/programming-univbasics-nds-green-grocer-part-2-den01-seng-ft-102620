@@ -51,7 +51,6 @@ def checkout(cart, coupons)
  final_total = 0
  cart.each do |grocery_item|
    result += (grocery_item[:price] * grocery_item[:count]).to_f
-    binding.pry
  end
 end
 
