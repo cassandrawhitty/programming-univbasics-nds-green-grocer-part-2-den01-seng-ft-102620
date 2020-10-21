@@ -37,7 +37,13 @@ def apply_coupons(cart, coupons)
 end 
 
 def apply_clearance(cart)
- 
+ #iterate through cart items
+ cart.each do |grocery_item|
+   
+ end
+ #if clearance == true
+   #reduce the price by 20%
+ # return cart
 end
 
 def checkout(cart, coupons)
