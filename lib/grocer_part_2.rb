@@ -28,7 +28,6 @@ def apply_coupons(cart, coupons)
           added_item[:clearance] = grocery_item[:clearance]
           added_item[:count] = coupon_item[:num]
           grocery_item[:count] = grocery_item[:count] - coupon_item[:num]
-          binding.pry
         end
         # if grocery_item[:count] % coupon_item[:num] == 0 
         #   grocery_item[:count] = 0 
