@@ -44,9 +44,6 @@ def apply_clearance(cart)
    end
    return cart
  end
- #if clearance == true
-   #reduce the price by 20%
- # return cart
 end
 
 def checkout(cart, coupons)
