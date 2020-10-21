@@ -52,6 +52,7 @@ def checkout(cart, coupons)
  cart.each do |grocery_item|
    result += grocery_item[:price] * grocery_item[:count]
  end
+ return result
 end
 
 =begin
