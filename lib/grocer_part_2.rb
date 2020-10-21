@@ -26,7 +26,7 @@ def apply_coupons(cart, coupons)
           added_item[:item] = "#{food_name} W/COUPON"
           added_item[:price] = coupon_item[:cost] / coupon_item[:num]
           added_item[:clearance] = grocery_item[:clearance]
-          
+          added_item[:count] = grocery_item[:count].div(coupon_item[:num])
         end
         # if grocery_item[:count] % coupon_item[:num] == 0 
         #   grocery_item[:count] = 0 
