@@ -30,23 +30,6 @@ def apply_coupons(cart, coupons)
           grocery_item[:count] = grocery_item[:count] - coupon_item[:num]
           cart.push(added_item)
         end
-        # if grocery_item[:count] % coupon_item[:num] == 0 
-        #   grocery_item[:count] = 0 
-        #   coupon_item[:item] = "#{food_name} W/COUPON"
-        #   coupon_item[:num] = coupon_item[:price]
-        #   coupon_item[:price] = coupon_item[:cost] / coupon_item[:num]
-        #   coupon_item[:clearance] = "true"
-        #   coupon_item[:count] = grocery_item[:count]
-        #   cart.push(coupon_item)
-        # else
-        #   grocery_item[:count] = (grocery_item[:count] % coupon_item[:num])
-        #   coupon_item[:item] = "#{food_name} W/COUPON"
-        #   coupon_item[:num] = coupon_item[:price]
-        #   coupon_item[:price] = coupon_item[:cost] / coupon_item[:num]
-        #   coupon_item[:clearance] == "true"
-        #   coupon_item[:count] = grocery_item[:count]
-        #   cart.push(coupon_item)
-        # end
       end
     end 
   end
@@ -118,4 +101,23 @@ FIRST ATTEMPT PSEUDOCODE:
     #add any remaining cart items result array with the updated count, or delete the object if the count is 0 
      #add the coupon object to the result array 
 #return result array 
+
+PART OF SECOND ATTEMPT:
+        # if grocery_item[:count] % coupon_item[:num] == 0 
+        #   grocery_item[:count] = 0 
+        #   coupon_item[:item] = "#{food_name} W/COUPON"
+        #   coupon_item[:num] = coupon_item[:price]
+        #   coupon_item[:price] = coupon_item[:cost] / coupon_item[:num]
+        #   coupon_item[:clearance] = "true"
+        #   coupon_item[:count] = grocery_item[:count]
+        #   cart.push(coupon_item)
+        # else
+        #   grocery_item[:count] = (grocery_item[:count] % coupon_item[:num])
+        #   coupon_item[:item] = "#{food_name} W/COUPON"
+        #   coupon_item[:num] = coupon_item[:price]
+        #   coupon_item[:price] = coupon_item[:cost] / coupon_item[:num]
+        #   coupon_item[:clearance] == "true"
+        #   coupon_item[:count] = grocery_item[:count]
+        #   cart.push(coupon_item)
+        # end
 =end
