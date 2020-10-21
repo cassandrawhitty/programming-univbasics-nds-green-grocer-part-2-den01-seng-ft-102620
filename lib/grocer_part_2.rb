@@ -21,7 +21,6 @@ def apply_coupons(cart, coupons)
     coupons.each do |coupon_item|
     coupon_food_name = coupon_item[:item]
       if food_name == coupon_food_name
-        binding.pry
         if grocery_item[:count] >= coupon_item[:num]
           added_item = {}
           added_item[:item] = "#{food_name} W/COUPON"
