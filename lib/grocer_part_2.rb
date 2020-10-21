@@ -50,6 +50,9 @@ def checkout(cart, coupons)
  cart = apply_clearance(cart)
  final_total = 0
  binding.pry
+ cart.each do |cart_item|
+   cart_item[:]
+ end
 end
 
 =begin
