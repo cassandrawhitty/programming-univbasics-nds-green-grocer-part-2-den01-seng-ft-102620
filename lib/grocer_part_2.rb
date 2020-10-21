@@ -52,6 +52,9 @@ def checkout(cart, coupons)
  cart.each do |grocery_item|
    final_total += grocery_item[:price] * grocery_item[:count]
  end
+ if final_total > 100 
+   final_total *= 0.9
+ end
  return final_total
 end
 
