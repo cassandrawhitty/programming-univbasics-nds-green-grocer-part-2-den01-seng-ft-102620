@@ -43,7 +43,7 @@ def apply_clearance(cart)
      grocery_item[:price] = grocery_item[:price] * 0.8
    end
    return cart
-   bdingin.pry
+   binding.pry
  end
  #if clearance == true
    #reduce the price by 20%
